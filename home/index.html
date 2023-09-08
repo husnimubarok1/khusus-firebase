@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box">
+            <p class="heading">Slider RGB & Opacity</p>
+                <div class="color-box">
+                    <div class="color-setup">
+                        <p>RED</p>
+                        <input id="input-red" oninput="merah()" type="range" value="255" min="0" max="255"> <p id="red-value">255</p>
+                    </div>
+
+                    <div class="color-setup">
+                        <p>GREEN</p>
+                        <input id="input-green" oninput="hijau()" type="range" value="255" min="0" max="255">
+                        <p id="green-value">255</p>
+                    </div>
+
+                    <div class="color-setup">
+                        <p>BLUE</p>
+                        <input id="input-blue" oninput="biru()" type="range" value="255" min="0" max="255"> <p id="blue-value">255</p>
+                    </div>
+                </div>
+        </div>
+        <div class="opacity-setup">
+            <p>OPACITY</p>
+            <input id="input-alpha" oninput="transparansi()" type="range" value="100" min="0" max="100"> <p id="alpha-value">100</p>
+        </div>
+        
+        <button onclick="pindahHal()" type="button" class="back">
+            <i class='bx bx-left-arrow-alt'></i> 
+            <span>Back to login</span> </button>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
