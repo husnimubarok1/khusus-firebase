@@ -33,6 +33,7 @@ function transparansi() {
     
 }
 
-function pindahHal() {
-    window.location.href="/login"
+function peringatan() {
+    let tombol = 'MAAF BELUM BERFUNGSI';
+    alert(tombol);
 }
