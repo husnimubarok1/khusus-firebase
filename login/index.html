@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <form action="/home/">
+            <h1>Login</h1>
+            <div class="sosmed">            
+            <button onclick="" class="btn-Git"><i class='bx bxl-github'></i> Github</button>
+            
+            <button onclick="" class="btn-Fb"><i class='bx bxl-gitlab'></i></i> Gitlab</button>
+            
+            <button onclick="" class="btn-Ggl"><i class='bx bxl-google'></i> Google</button>
+            </div>
+         <div class="box-line">
+            <div class="line"></div>
+            <p>OR</p>
+            <div class="line"></div>
+        </div>
+            <div class="em-pass">
+                <div class="input-box">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="your@email.com" required>
+                    <i class='bx bx-envelope'></i>
+                </div>
+
+                <div class="input-box">
+                    <label for="">Password</label>
+                    <input id="password" type="password" placeholder="your password" required>
+                    <button type="button" onclick="passToText()" onmouseout="oriText()"><i class='bx bxs-lock'></i></button>
+                </div>
+            </div>
+            <button type="submit" class="btn">Login</button> <br>
+            
+        </form>
+    </div> 
+    <script src="script.js"></script>    
+</body>
+</html>
